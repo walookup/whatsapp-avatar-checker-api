@@ -39,7 +39,7 @@ curl -X POST "https://walookup.com/api/v1/batch-check" -H "X-API-Key: ${WALOOKUP
 
 ## Runnable examples
 
-Eight self-contained examples are provided under `examples/`: Python, Node.js, Go, Java, C#, PHP, and Shell each call the synchronous `/api/v1/check` endpoint for a single identifier and `/api/v1/batch-check` for a batch, with HTTP error handling; browser JavaScript calls a same-origin proxy and never contains an API key. Set the server-side API-key environment variable before running them.
+Seven self-contained examples are provided under `examples/`: Python, Node.js, Go, Java, C#, PHP, and Shell each call the synchronous `/api/v1/check` endpoint for a single identifier and `/api/v1/batch-check` for a batch, with HTTP error handling. Set the server-side API-key environment variable before running them.
 
 ## Official resources
 
