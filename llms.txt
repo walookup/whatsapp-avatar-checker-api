@@ -1,0 +1,22 @@
+# WA Lookup WhatsApp Avatar Checker API
+> Official integration context generated from the checked API expansion manifest.
+
+## Canonical resources
+- [ws_avatar](https://walookup.com/api-docs)
+
+## Contract facts
+- API base URL: https://walookup.com
+- Authentication: `X-API-Key` request header
+- API key environment variable: `WALOOKUP_API_KEY`
+- Processing mode: sync_single_and_batch
+- Current prices are not embedded; use the official pricing page.
+
+## Products
+- `ws_avatar`: WhatsApp Avatar Verification · input `phone` · fields: service_type, identifier, registered, avatar, avatar_url
+
+## Safety
+- Process only identifiers you are authorized to verify.
+- Do not expose API keys in browser code or commit secrets.
+- An undetermined result is not a confirmed negative.
+
+Last reviewed: 2026-08-18.

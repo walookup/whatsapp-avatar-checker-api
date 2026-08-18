@@ -1,0 +1,2 @@
+// Browser code must call a same-origin backend proxy; never expose an API key.
+Promise.all([fetch("/api/check-proxy",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({"service_type":"ws_avatar","identifier":"+14155550100"})}),fetch("/api/batch-check-proxy",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({"service_type":"ws_avatar","identifiers":["+14155550100","+442079460000"]})})]).then(async rs=>console.log(await Promise.all(rs.map(r=>r.json()))));
