@@ -1,1 +1,7 @@
-{"private":true,"type":"commonjs","scripts":{"start":"node example.js"}}
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node example.js"
+  }
+}

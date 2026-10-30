@@ -29,9 +29,9 @@
     }
   },
   "limits": {
-    "numbers_per_utc_minute": 200,
-    "concurrent_checks": 5,
-    "concurrent_batches": 1
+    "requests_in_flight": 5,
+    "concurrent_batches": 1,
+    "batch_timeout_seconds": 300
   },
   "products": [
     {
@@ -53,5 +53,5 @@
   "pricing_url": "https://walookup.com/pricing",
   "maintainer": "WA Lookup",
   "license": "MIT",
-  "last_reviewed": "2026-08-18"
+  "last_reviewed": "2026-10-30"
 }

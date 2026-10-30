@@ -47,4 +47,8 @@ Seven self-contained examples are provided under `examples/`: Python, Node.js, G
 - Pricing: https://walookup.com/pricing
 - OpenAPI contract: [openapi.yaml](openapi.yaml)
 
-Last reviewed: 2026-08-18.
+Last reviewed: 2026-10-30.
+
+## Current response and timeout contract
+
+Result fields are directly in `data`: `service_type`, `identifier`, `registered`, `avatar`, `avatar_url`. Internal `provider`/`profile_available` are not returned. For ordered batches, `exists=false` means undetermined; never classify it as a negative. Python and Node.js select `MODE=single` (default) or `MODE=batch`; their client timeout defaults to 60 / 330 seconds and is configurable via `REQUEST_TIMEOUT_SECONDS`. The server batch window is 300 seconds. Do not blindly repeat a potentially billed request after an uncertain timeout. The default budget is five in-flight requests and one synchronous batch.
